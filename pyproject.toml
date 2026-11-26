@@ -11,6 +11,8 @@ dependencies = [
     "bigquery>=0.0.45",
     "fastapi>=0.165.0",
     "google>=3.0.0",
+    "numpy>=2.5.5",
+    "db-dtypes>=1.9.0",
     "google-cloud>=0.34.0",
     "matplotlib>=3.11.2",
     "pandas<3",
