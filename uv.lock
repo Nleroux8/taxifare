@@ -2280,20 +2280,16 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "bigquery" },
+    { name = "db-dtypes" },
     { name = "fastapi" },
     { name = "google" },
     { name = "google-cloud" },
-    { name = "matplotlib" },
-    { name = "pandas" },
-    { name = "scikit-learn" },
-    { name = "seaborn" },
-    { name = "uvicorn" },
-    { name = "db-dtypes" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "scikit-learn" },
     { name = "seaborn" },
+    { name = "uvicorn" },
 ]
 
 [package.dev-dependencies]
@@ -2304,20 +2300,16 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "bigquery", specifier = ">=0.0.45" },
+    { name = "db-dtypes", specifier = ">=1.9.0" },
     { name = "fastapi", specifier = ">=0.165.0" },
     { name = "google", specifier = ">=3.0.0" },
     { name = "google-cloud", specifier = ">=0.34.0" },
-    { name = "matplotlib", specifier = ">=3.11.2" },
-    { name = "pandas", specifier = "<3" },
-    { name = "scikit-learn", specifier = ">=1.9.1" },
-    { name = "seaborn", specifier = ">=0.13.2" },
-    { name = "uvicorn", specifier = ">=0.54.0" },
-    { name = "db-dtypes", specifier = ">=1.9.0" },
     { name = "matplotlib", specifier = ">=3.11.2" },
     { name = "numpy", specifier = ">=2.5.5" },
     { name = "pandas", specifier = "<3" },
     { name = "scikit-learn", specifier = ">=1.9.1" },
     { name = "seaborn", specifier = ">=0.13.2" },
+    { name = "uvicorn", specifier = ">=0.54.0" },
 ]
 
 [package.metadata.requires-dev]
