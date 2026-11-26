@@ -15,3 +15,16 @@ docker_build_local:
 
 docker_run:
 	@docker run -p 8001:8080 ${DOCKER_IMAGE_NAME}:dev
+
+docker_build_cloud:
+	@docker build \
+	--platform linux/amd64 \
+  -t ${GAR_IMAGE_NAME}:prod .
+
+docker_push:
+	@docker push ${GAR_IMAGE_NAME}:prod
+
+docker_deploy:
+	@gcloud run deploy \
+	--image ${GAR_IMAGE_NAME}:prod \
+  --region ${GCP_REGION}
