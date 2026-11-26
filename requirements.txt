@@ -1,0 +1,2 @@
+# install for api
+uv pip install fastapi uvicorn
