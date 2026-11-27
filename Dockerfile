@@ -5,6 +5,7 @@ COPY pyproject.toml ./pyproject.toml
 COPY README.md ./README.md
 COPY api ./api
 COPY src ./src
+COPY models ./models
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 RUN uv sync
